@@ -5,14 +5,25 @@
   <title>Weekend Homework 6</title>
 </head>
 <body>
-  <main>
+  <main id="mainSection">
 
   </main>
 
-  
+<script type="text/template" id="mainArea">
+  <input id="todoInput" type="text" placeholder="Whatcha need to be doin?"/>
+  <ul id="listStart">
+  </ul>
+</script>
+<script type='text/template' id="todoList">
+  <li></li>
+</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
   <script src='js/main.js'></script>
+  <script src='js/models/todoModel.js'></script>
+  <script src='js/collections/todoCollection.js'></script>
+  <script src='js/views/todoView.js'></script>
+  <script src='js/routers/mainRouter.js'></script>
 </body>
 </html>
