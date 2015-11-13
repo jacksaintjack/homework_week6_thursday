@@ -14,9 +14,13 @@
   <ul id="listStart">
   </ul>
 </script>
+
 <script type='text/template' id="todoList">
-  <li></li>
+  <% _.forEach(doLists, function(data){ %>
+  <li> <%= data.todo %> </li>
+    <% }) %>
 </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
@@ -24,6 +28,7 @@
   <script src='js/models/todoModel.js'></script>
   <script src='js/collections/todoCollection.js'></script>
   <script src='js/views/todoView.js'></script>
+  <script src='js/views/todoListView.js'></script>
   <script src='js/routers/mainRouter.js'></script>
 </body>
 </html>
