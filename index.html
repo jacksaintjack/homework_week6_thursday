@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Weekend Homework 6</title>
+  <link rel="stylesheet" href="style/style.css" media="screen">
 </head>
 <body>
   <main id="mainSection">
@@ -17,7 +18,11 @@
 
 <script type='text/template' id="todoList">
   <% _.forEach(doLists, function(data){ %>
-  <li> <%= data.todo %> </li>
+  <li>
+    <input id="check" type="checkbox" data-id="<%= data._id %>" name="checked"/>
+    <%= data.todo %>
+    <button id="deleteList" data-id="<%=data._id %>">Delete</button>
+  </li>
     <% }) %>
 </script>
 

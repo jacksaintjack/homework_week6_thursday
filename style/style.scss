@@ -1,2 +1,30 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
 @import '../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+main{
+  @include outer-container(30%);
+  input{
+    @include span-columns(12);
+    font-size:2.5em;
+  }
+  ul{
+    padding:0;
+    font-size:1.5em;
+    #check{
+      @include span-columns(0.5);
+      margin-left:0;
+      zoom:0.5;
+      transform:scale(3);
+      position: relative;
+      top: 20px;
+      left: 8px;
+    }
+    li{
+      list-style: none;
+    }
+    button{
+      float:right;
+    }
+
+  }
+}

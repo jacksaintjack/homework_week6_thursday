@@ -5,3 +5,40 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; }
+
+main {
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto; }
+  main::after {
+    clear: both;
+    content: "";
+    display: table; }
+  main input {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    font-size: 2.5em; }
+    main input:last-child {
+      margin-right: 0; }
+  main ul {
+    padding: 0;
+    font-size: 1.5em; }
+    main ul #check {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 1.90725%;
+      margin-left: 0;
+      zoom: 0.5;
+      transform: scale(3);
+      position: relative;
+      top: 20px;
+      left: 8px; }
+      main ul #check:last-child {
+        margin-right: 0; }
+    main ul li {
+      list-style: none; }
+    main ul button {
+      float: right; }
