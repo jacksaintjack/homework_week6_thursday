@@ -43,6 +43,22 @@ main{
   }
   footer{
     @include span-columns(12);
-  
+    border:2px solid gray;
+    padding:2%;
+    position: relative;
+    bottom: 1.3em;
+    #listLength{
+      @include span-columns(2.5);
+      margin-right: 12.35765%;
+    }
+    #completed{
+      float:right;
+      font-weight: bolder;
+    }
+    a{
+      @include span-columns(2.5);
+      text-decoration: none;
+      color:black;
+    }
   }
 }

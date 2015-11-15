@@ -25,8 +25,8 @@
 <script type='text/template' id="todoList">
   <% _.forEach(doLists, function(data){ %>
   <li>
-    <input id="check" type="checkbox" data-id="<%= data._id %>" name="checked"/>
-    <%= data.todo %>
+    <input id="check" type="checkbox" data-id="<%= data._id %>" data-completed="<%= data.completed %>"/>
+    <span id="todoText"><%= data.todo %></span>
     <button id="deleteList" data-id="<%=data._id %>">Delete</button>
   </li>
     <% }) %>

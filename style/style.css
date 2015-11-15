@@ -60,6 +60,30 @@ main {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 100%;
+    border: 2px solid gray;
+    padding: 2%;
+    position: relative;
+    bottom: 1.3em; }
     main footer:last-child {
       margin-right: 0; }
+    main footer #listLength {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 18.96686%;
+      margin-right: 12.35765%; }
+      main footer #listLength:last-child {
+        margin-right: 0; }
+    main footer #completed {
+      float: right;
+      font-weight: bolder; }
+    main footer a {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 18.96686%;
+      text-decoration: none;
+      color: black; }
+      main footer a:last-child {
+        margin-right: 0; }
