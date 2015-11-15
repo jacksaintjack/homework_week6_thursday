@@ -61,5 +61,9 @@ main{
       text-decoration: none;
       color:black;
     }
+    .completed{
+      color:gray;
+      text-decoration: line-through;
+    }
   }
 }

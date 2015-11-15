@@ -88,3 +88,6 @@ main {
       color: black; }
       main footer a:last-child {
         margin-right: 0; }
+    main footer .completed {
+      color: gray;
+      text-decoration: line-through; }
